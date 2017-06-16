@@ -17,7 +17,7 @@ function setup(){
 }
 
 function draw(){
-    background(0,230,240,10);
+    background(0,230,240, 20);
     //kar.update();
     //kar.draw();
     
@@ -31,6 +31,9 @@ function draw(){
          kot.splice(i, 1);
          jumKot--;
       }
+      //fill(0);
+      //textSize(200);
+      //text(jumKot, windowWidth/2, windowHeight/2);
    }
    
 }
@@ -122,20 +125,20 @@ function Kotak(){
       }
       
       if(this.posX >= width-10){
-         this.mvX = -1; 
+         this.mvX = -4; 
          this.la = 0;
       }
       if(this.posX <= 0){
-         this.mvX = 1; 
+         this.mvX = 4; 
          this.la = 0;
       }
       
       if(this.posY >= height-10){
-         this.mvY = -1; 
+         this.mvY = -4; 
          this.la = 0;
       }
       if(this.posY <= 0){
-         this.mvY = 1; 
+         this.mvY = 4; 
          this.la = 0;
       }
       
