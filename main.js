@@ -17,7 +17,7 @@ function setup(){
 }
 
 function draw(){
-    background(0,230,240, 20);
+    background(0,230,240, 13);
     //kar.update();
     //kar.draw();
     
@@ -26,7 +26,7 @@ function draw(){
       if(kot[i].belok(kar.x, kar.y)){
          kar.changeDir();
       }
-      kot[i].checkGagal(kar.x, kar.y)
+      //kot[i].checkGagal(kar.x, kar.y)
       if(kot[i].nabrakTembok()){
          kot.splice(i, 1);
          jumKot--;
