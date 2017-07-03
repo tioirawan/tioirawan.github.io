@@ -22,13 +22,13 @@ make a simple bank web page, but i don't know what features i
 need to make, and now i decided to make a mini oe simple social 
 media.. 
 * [open the result](http://www.bankrut.16mb.com)
-* [project page](https://cowdink.github.io/bankrut)__
+* [project page](https://cowdink.github.io/bankrut) <br />
 
 2. ### [Halal-checker](http://www.bankrut.16mb.com)
 this project is to check of *halal label* of a products, for mor 
 information just check on the halal checker page
 * [open the result](http://www.bankrut.16mb.com/halal-checker)
-* [project page](https://cowdink.github.io/halal-checker)__
+* [project page](https://cowdink.github.io/halal-checker) <br />
 
 
 ## Contact
