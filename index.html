@@ -156,7 +156,7 @@ body, html {
   </div>
   <p class="w3-wide"><i class="fa fa-child"></i>Others</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:20%">65%</div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
   </div>
 </div>
 
@@ -310,9 +310,12 @@ body, html {
 <!-- Add Google Maps -->
 <script>
 	
+window.onload = function(){
+	$('#splash-screen').hide();
+}
+
 $(function(){
 	
-$('#splash-screen').hide();
 $('#mail-success-alert').hide();
 $('#mail-failed-alert').hide();
 
@@ -406,7 +409,7 @@ function myMap()
   myCenter=new google.maps.LatLng(-7.872619,112.530876);
   var mapOptions= {
     center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
+    zoom:12, scrollwheel: true, draggable: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
@@ -449,7 +452,7 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKDEQCyTBlBScYlSkWUC5B6hMJkPUPTUs&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
