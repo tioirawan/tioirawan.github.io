@@ -30,7 +30,7 @@ information just check on the halal checker page
 * [open the result](http://www.bankrut.16mb.com/halal-checker)
 * [project page](https://cowdink.github.io/halal-checker) <br />
 
-###Futures Project
+### Futures Project
 
 1. Explore Codeigniter framework
 2. Simple AI
