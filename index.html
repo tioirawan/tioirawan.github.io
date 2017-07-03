@@ -331,12 +331,7 @@ $("#mailer-email").keyup(function(event){
     	$('#mailer-message').focus();
 	}
 });
-$("#mailer-message").keyup(function(event){
-	if(event.keyCode == 13){
-    	$('#mailer-submit').click();
-	}
-});
-	
+
 $('#mail-success-alert').hide();
 $('#mail-failed-alert').hide();
 $('#mail-sending-alert').hide();
