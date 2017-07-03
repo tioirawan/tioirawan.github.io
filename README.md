@@ -16,7 +16,7 @@ republish my code with/without my credits.
 
 ## Projects
 
-1. [### Bakrut](http://www.bankrut.16mb.com)
+1. ### [Bakrut](http://www.bankrut.16mb.com)
 this project i make first just for *fun* and then i decided to 
 make a simple bank web page, but i don't know what features i 
 need to make, and now i decided to make a mini oe simple social 
@@ -24,7 +24,7 @@ media..
 * [open the result](http://www.bankrut.16mb.com)
 * [project page](https://cowdink.github.io/bankrut)
 
-2. [### Halal-checker](http://www.bankrut.16mb.com)
+2. ### [Halal-checker](http://www.bankrut.16mb.com)
 this project is to check of *halal label* of a products, for mor 
 information just check on the halal checker page
 * [open the result](http://www.bankrut.16mb.com/halal-checker)
