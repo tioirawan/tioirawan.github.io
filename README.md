@@ -1,13 +1,13 @@
-# CowDink Project Page
+# Main Project Page
 
-this page is the main page for all my prpject,
-you can directly see my project on my 
-[GitHub](https://github.com/cowdink) account
+this page is the main page for all my project, you can directly see my project on my [GitHub](github.com/cowdink) account.
 
 ## Contribute
 
-all of my project is open source, you can freely edit or 
-republish my code with/without my credits.
+all of my project is open source, you can freely edit or republish my code with/without my credits.
+
+to contribute on my project, first fork to your repository, and make a pull request, i don't know exactly how to contribute on a GitHub project and I'm new to git.
+
 
 > Most good programmers do programming not because they expect 
 > to get paid or get adulation by the public, but because it is 
