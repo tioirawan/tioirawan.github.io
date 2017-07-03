@@ -24,7 +24,7 @@ need to make, and now i decided to make a mini oe simple social
 media.. 
 
 2. [Halal-checker](http://www.bankrut.16mb.com)
-###Halal Checker
+### Halal Checker
 this project is to check of *halal label* of a products, for mor 
 information just check on the halal checker page
 
