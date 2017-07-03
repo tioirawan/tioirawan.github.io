@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -258,7 +259,7 @@ body, html {
       <!-- Add Google Maps -->
       <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
     </div>
-    <div class="w3-col m8 w3-panel">
+    <div class="w3-col m8 w3-panel" id="go-here">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Batu, Jawatimur, Indonesia<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +62 8885504740<br>
@@ -275,13 +276,18 @@ body, html {
   		<h3>Error!</h3>
   		<span id="mail-alert-error"></span>
 	  </div> 
+	  <div id="mail-sending-alert" class="w3-blue w3-container w3-margin-bottom" style="z-index:9;">
+      	<span onclick="$(this).parent().hide()" class="w3-button w3-right">&times;</span>
+  		<h3>Sending...</h3>
+  		<span>please wait...</span>
+	  </div> 
       <!--<form action="/action_page.php" target="_blank">-->
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input id="mailer-name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
           </div>
           <div class="w3-half">
-            <input id="mailer-email" class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <input id="mailer-email" class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
           </div>
         </div>
         <textarea id="mailer-message" class="w3-input w3-border" rows="5" placeholder="Message" required name="Message"></textarea>
@@ -315,9 +321,26 @@ window.onload = function(){
 
 $(function(){
 	
+$("#mailer-name").keyup(function(event){
+	if(event.keyCode == 13 || event.keyCode == 9){
+    	$('#mailer-email').focus();
+	}
+});
+$("#mailer-email").keyup(function(event){
+	if(event.keyCode == 13 || event.keyCode == 9){
+    	$('#mailer-message').focus();
+	}
+});
+$("#mailer-message").keyup(function(event){
+	if(event.keyCode == 13){
+    	$('#mailer-submit').click();
+	}
+});
+	
 $('#mail-success-alert').hide();
 $('#mail-failed-alert').hide();
-
+$('#mail-sending-alert').hide();
+/** send mail ajax request (dont work on github.io)
 $('#mailer-submit').click(function(){
 	try{
 	var mName = escape($('#mailer-name').val());
@@ -364,9 +387,78 @@ $('#mailer-submit').click(function(){
 	}
 	
 });
+**/
+
+//send mail via MailJs
+$('#mailer-submit').click(function(){
+	$('#mail-sending-alert').show();
+	$('#mail-success-alert').hide();
+	$('#mail-failed-alert').hide();
 	
+	$('html, body').animate({
+        scrollTop: $("#go-here").offset().top
+    }, 2000);
 	
+	var mName = $('#mailer-name').val();
+	var mEmail = $('#mailer-email').val();
+	var mMess = $('#mailer-message').val();
+	var errMess = "";
 	
+	try{
+	if(mName && mEmail && mMess && validateEmail(mEmail)){
+		mMess += " Write with love by "+mName;
+		
+	emailjs.init("user_exTxG2pfF22CpBi5quB8e");
+	// parameters: service_id, template_id, template_parameters
+	emailjs.send("gmail", "template_xN7dwP1P", {
+		"from_email": mEmail,
+		"reply_to": "cowdink page",
+		"to_name":"cowdink",
+		"from_name": mName,
+		"message_html": mMess
+	}).then(function(response) {
+		$('#mail-sending-alert').hide();
+    	$('#mailer-name').val("");
+		$('#mailer-email').val("");
+		$('#mailer-message').val("");
+		$('#mail-success-alert').show();
+		$('#mail-success-alert').focus();
+		
+	}, function(err) {
+	    $('#mail-sending-alert').hide();
+   	 $('#mail-alert-error').html(err);
+	    $('#mail-failed-alert').show();
+	});
+	}else{
+		if(!mName){
+			errMess += "<p>What your name?</p>";
+			
+		}
+		if(!mEmail){
+			errMess += "<p>What your email?</p>";
+			
+		}
+		if(!mMess){
+			errMess += "<p>What your messages to me?</p>";
+			
+		}
+		if(!validateEmail(mEmail)){
+			errMess += "<p>Your email format is wrong!</p>";
+		}
+		$('#mail-sending-alert').hide();
+		$('#mail-alert-error').html(errMess);
+		$('#mail-failed-alert').show();
+	}
+	}catch(err){
+		$('#mail-sending-alert').hide();
+		alert(err);
+	}
+});
+	
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
 	
 $(".to-the-top").click(function() {
     $('html, body').animate({
