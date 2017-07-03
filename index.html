@@ -431,16 +431,13 @@ $('#mailer-submit').click(function(){
 	});
 	}else{
 		if(!mName){
-			errMess += "<p>What your name?</p>";
-			
+			errMess += "<p>What is your name?</p>";
 		}
 		if(!mEmail){
-			errMess += "<p>What your email?</p>";
-			
+			errMess += "<p>What is your email?</p>";
 		}
 		if(!mMess){
-			errMess += "<p>What your messages to me?</p>";
-			
+			errMess += "<p>What is your messages to me?</p>";
 		}
 		if(!validateEmail(mEmail)){
 			errMess += "<p>Your email format is wrong!</p>";
