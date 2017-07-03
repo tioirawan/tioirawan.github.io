@@ -17,9 +17,9 @@ to contribute on my project, first fork to your repository, and make a pull requ
 ## Projects
 
 1. ### [Bakrut](http://www.bankrut.16mb.com)
-this project i make first just for *fun* and then i decided to 
+first, i make this project just for *fun* and then i decided to 
 make a simple bank web page, but i don't know what features i 
-need to make, and now i decided to make a mini oe simple social 
+need to make, and now i decided to make a mini simple social 
 media.. 
 * [open the result](http://www.bankrut.16mb.com)
 * [project page](https://cowdink.github.io/bankrut) <br />
@@ -30,6 +30,16 @@ information just check on the halal checker page
 * [open the result](http://www.bankrut.16mb.com/halal-checker)
 * [project page](https://cowdink.github.io/halal-checker) <br />
 
+###Futures Project
+
+1. Explore Codeigniter framework
+2. Simple AI
+3. C# game
+4. Java game
+5. Processing
+6. Android Processing/p5.js
+7. Explore OpenCV framework
+8. Portofolio
 
 ## Contact
 
