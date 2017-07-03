@@ -32,13 +32,13 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
+    background-image: url("images/parallax2.png");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
+    background-image: url("images/parallax3.png");
     min-height: 400px;
 }
 
@@ -100,7 +100,7 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CowDink</span>
+    <span class="to-about-me w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CowDink</span>
   </div>
 </div>
 
@@ -392,7 +392,7 @@ $('#mailer-submit').click(function(){
 	
 	$('html, body').animate({
         scrollTop: $("#go-here").offset().top
-    }, 2000);
+    }, 800);
 	
 	var mName = $('#mailer-name').val();
 	var mEmail = $('#mailer-email').val();
@@ -412,14 +412,22 @@ $('#mailer-submit').click(function(){
 		"from_name": mName,
 		"message_html": mMess
 	}).then(function(response) {
+		$('html, body').animate({
+        	scrollTop: $("#go-here").offset().top
+   	 }, 800);
 		$('#mail-sending-alert').hide();
     	$('#mailer-name').val("");
 		$('#mailer-email').val("");
 		$('#mailer-message').val("");
 		$('#mail-success-alert').show();
-		$('#mail-success-alert').focus();
+		setTimeout(function(){
+			$('#mail-success-alert').hide();
+		}, 10000);
 		
 	}, function(err) {
+		$('html, body').animate({
+        	scrollTop: $("#go-here").offset().top
+    	}, 800);
 	    $('#mail-sending-alert').hide();
    	 $('#mail-alert-error').html(err);
 	    $('#mail-failed-alert').show();
@@ -434,9 +442,12 @@ $('#mailer-submit').click(function(){
 		if(!mMess){
 			errMess += "<p>What is your messages to me?</p>";
 		}
-		if(!validateEmail(mEmail)){
+		if(mEmail && !validateEmail(mEmail)){
 			errMess += "<p>Your email format is wrong!</p>";
 		}
+		$('html, body').animate({
+      	  scrollTop: $("#go-here").offset().top
+    	}, 800);
 		$('#mail-sending-alert').hide();
 		$('#mail-alert-error').html(errMess);
 		$('#mail-failed-alert').show();
