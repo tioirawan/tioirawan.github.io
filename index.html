@@ -263,7 +263,7 @@ body, html {
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Batu, Jawatimur, Indonesia<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +62 8885504740<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: rahasia@rahasia.com<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail.cowdink@gmail.com<br>
       </div>
       <p>I'm ready for a gift <i class="fa fa-gift"></i>, or leave me a note:</p>
       <div id="mail-success-alert" class="w3-green w3-container w3-margin-bottom">
@@ -279,7 +279,7 @@ body, html {
 	  <div id="mail-sending-alert" class="w3-blue w3-container w3-margin-bottom" style="z-index:9;">
       	<span onclick="$(this).parent().hide()" class="w3-button w3-right">&times;</span>
   		<h3>Sending...</h3>
-  		<span>please wait...</span>
+  		<p>please wait...</p>
 	  </div> 
       <!--<form action="/action_page.php" target="_blank">-->
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -384,6 +384,12 @@ $('#mailer-submit').click(function(){
 });
 **/
 
+/**just test
+name: 'John',
+reply_email: 'john@doe.com',
+message: 'This is awesome!'
+*/
+
 //send mail via MailJs
 $('#mailer-submit').click(function(){
 	$('#mail-sending-alert').show();
@@ -407,6 +413,8 @@ $('#mailer-submit').click(function(){
 	// parameters: service_id, template_id, template_parameters
 	emailjs.send("gmail", "template_xN7dwP1P", {
 		"from_email": mEmail,
+		"name": mName,
+		"reply_email": mEmail,
 		"reply_to": "cowdink page",
 		"to_name":"cowdink",
 		"from_name": mName,
