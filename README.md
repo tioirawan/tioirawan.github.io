@@ -2,7 +2,7 @@
 
 this page is the main page for all my prpject,
 you can directly see my project on my 
-[GitHub](https://github.com/cowdink)account
+[GitHub](https://github.com/cowdink) account
 
 ## Contribute
 
