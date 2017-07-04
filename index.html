@@ -4,8 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script type="text/javascript" src="libraries/jquery.min.js"></script>-->
+<link href="libraries/prism.css" rel="stylesheet" />
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--<link rel="stylesheet" href="libraries/w3.css">-->
+<script src="libraries/prism.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -14,6 +18,7 @@ body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
+    overflow:hidden;
 }
 
 /* Create a Parallax Effect */
@@ -58,9 +63,9 @@ body, html {
     height: 100%;
     left: 0;
     top: 0;
-    background: rgba(51,51,51,0.7);
     z-index: 10;
   }
+
   
 </style>
 <body>
@@ -69,7 +74,7 @@ body, html {
 <div id="splash-screen" class="w3-container w3-white w3-center">
 	<div class="w3-display-middle">
 		<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-		<p>This may take a while, depends on your connection</p>
+		<p>Loading...</p>
 	</div>
 </div>
 
@@ -81,7 +86,7 @@ body, html {
     </a>
     <a class="to-the-top w3-bar-item w3-button">HOME</a>
     <a class="to-about-me w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a class="to-my-project w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a class="to-my-project w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECT</a>
     <a class="to-contact w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -91,7 +96,7 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a class="to-about-me w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a class="to-my-project w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a class="to-my-project w3-bar-item w3-button" onclick="toggleFunction()">PROJECT</a>
     <a class="to-contact w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -108,18 +113,69 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"><em>I love programming</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
     qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <pre><code class="language-javascript">
+  if(this.test.code() == getStatus.work()){
+  	this.load.happy().full();
+  }else{
+  	this.set = function(){
+  		reSetting.library();
+  	}
+  	var moto = "never give up!";
+  	print(moto);	
+  }
+  </code></pre>
+  <p>Integer pretium leo eu nisi aliquet interdum in id nulla. 
+	 Nunc luctus convallis orci nec vulputate. Pellentesque et consectetur est, ut malesuada nisi. 
+	 Phasellus mattis finibus dignissim. Nunc vestibulum nisi eget commodo convallis. 
+	 Donec tempor libero ipsum, eu commodo lorem rhoncus eu. Donec tristique convallis lorem, sed pharetra eros fringilla eget. 
+	 Morbi vitae nibh non mauris volutpat eleifend vel eget metus. In quis sem turpis. Curabitur ut arcu nibh. 
+	 Quisque eu dictum nulla. Aliquam eu sem id nibh varius mollis quis euismod elit. Suspendisse molestie porta ligula vel posuere. 
+	 Morbi congue sapien vulputate dui sagittis, in faucibus ipsum mattis. Fusce ut eros ac erat ornare rutrum volutpat eu turpis. 
+	 Duis sapien turpis, gravida eu purus sed, semper dictum sem.
+  </p>
+  <pre><code class="language-php">
+  &lt;?php
+  $name = "Linus Trovald";
+  $motto = "Most good programmers do programming not because they expect
+		    to get paid or get adulation by the public, but because it is 
+            fun to program.";
+  if($motto.isRight()){
+  	do.coding();
+  }else{
+  	switch($motto.bad()){
+  		case 1:
+  		do.gaming();
+  		break;
+  		case 2:
+  		do.design();
+  		break;
+  		case 3:
+  		do.sleep();
+  		break;
+  	}
+  }
+  ?&gt;
+  </code></pre>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="images/pp.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p>this page is the main page for all my project, you can directly see my project on my <a href="github.com/cowdink">GitHub</a> account.</p>
+      <p>Integer pretium leo eu nisi aliquet interdum in id nulla. 
+	 Nunc luctus convallis orci nec vulputate. Pellentesque et consectetur est, ut malesuada nisi. 
+	 Phasellus mattis finibus dignissim. Nunc vestibulum nisi eget commodo convallis. 
+	 Donec tempor libero ipsum, eu commodo lorem rhoncus eu. Donec tristique convallis lorem, sed pharetra eros fringilla eget. 
+	 Morbi vitae nibh non mauris volutpat eleifend vel eget metus. In quis sem turpis. Curabitur ut arcu nibh. 
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+     Ut enim ad minim veniam.
+      </p>
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">Im good at:</p>
@@ -189,48 +245,52 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!-- Container (PROJECT Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"><em>Here are some of my work.<br> Click on the images to make go the github pages</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <!--
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="images/p1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="images/p2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="images/p3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      <img src="images/p4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      <img src="images/p5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <img src="images/p6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <img src="images/p7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <img src="images/p8.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
     </div>
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
+  -->
+  	
+  
 </div>
 
 <!-- Modal for full size images on click-->
@@ -266,18 +326,18 @@ body, html {
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail.cowdink@gmail.com<br>
       </div>
       <p>I'm ready for a gift <i class="fa fa-gift"></i>, or leave me a note:</p>
-      <div id="mail-success-alert" class="w3-green w3-container w3-margin-bottom">
-      	<span onclick="$(this).parent().hide()" class="w3-button w3-right">&times;</span>
+      <div id="mail-success-alert" class="w3-green w3-display-container w3-padding w3-margin-bottom">
+      	<span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
   		<h3>Success!</h3>
   		<p>Your email has been sended! thanks for your time.</p>
 	  </div> 
-	  <div id="mail-failed-alert" class="w3-red w3-container w3-margin-bottom">
-      	<span onclick="$(this).parent().hide()" class="w3-button w3-right">&times;</span>
+	  <div id="mail-failed-alert" class="w3-red w3-display-container w3-padding w3-margin-bottom">
+      	<span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
   		<h3>Error!</h3>
   		<span id="mail-alert-error"></span>
 	  </div> 
-	  <div id="mail-sending-alert" class="w3-blue w3-container w3-margin-bottom" style="z-index:9;">
-      	<span onclick="$(this).parent().hide()" class="w3-button w3-right">&times;</span>
+	  <div id="mail-sending-alert" class="w3-blue w3-display-container w3-padding w3-margin-bottom" style="z-index:9;">
+      	<span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
   		<h3>Sending...</h3>
   		<p>please wait...</p>
 	  </div> 
@@ -317,6 +377,7 @@ body, html {
 	
 window.onload = function(){
 	$('#splash-screen').hide();
+	$('body, html').css("overflow", "visible")
 }
 
 $(function(){
@@ -437,7 +498,7 @@ $('#mailer-submit').click(function(){
         	scrollTop: $("#go-here").offset().top
     	}, 800);
 	    $('#mail-sending-alert').hide();
-   	 $('#mail-alert-error').html(err);
+   	 $('#mail-alert-error').html("<p>Failed to send your message...</p>");
 	    $('#mail-failed-alert').show();
 	});
 	}else{
