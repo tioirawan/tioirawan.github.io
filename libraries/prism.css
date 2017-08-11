@@ -215,7 +215,7 @@ pre[class*="language-"][data-line] {
 }
 pre[data-line] code {
 	position: relative;
-	padding-left: 4em;
+	padding-left: 2em;
 }
 pre .line-highlight {
 	margin-top: 0;
@@ -223,7 +223,7 @@ pre .line-highlight {
 
 pre[data-line] {
 	position: relative;
-	padding: 1em 0 1em 3em;
+	padding: 1em 0 1em 2em;
 }
 
 .line-highlight {
@@ -233,8 +233,8 @@ pre[data-line] {
 	padding: inherit 0;
 	margin-top: 1em; /* Same as .prism’s padding-top */
 
-	background: hsla(24, 20%, 50%,.08);
-	background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+	background: rgba(100, 100, 100,.08);
+	background: linear-gradient(to right, rgba(100, 100, 100,.1) 60%, rgba(100, 100, 100,0));
 
 	pointer-events: none;
 
@@ -250,14 +250,15 @@ pre[data-line] {
 		left: .6em;
 		min-width: 1em;
 		padding: 0 .5em;
-		background-color: hsla(24, 20%, 50%,.4);
-		color: hsl(24, 20%, 95%);
+		padding-top:3px;
+		background-color: rgba(100, 100, 100,.4);
+		color: rgb(100, 100, 100);
 		font: bold 65%/1.5 sans-serif;
 		text-align: center;
 		vertical-align: .3em;
 		border-radius: 999px;
 		text-shadow: none;
-		box-shadow: 0 1px white;
+		box-shadow: 0 0px white;
 	}
 
 	.line-highlight[data-end]:after {

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<title>CowDink</title>
+<title>Indmind</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--<script type="text/javascript" src="libraries/jquery.min.js"></script>-->
+<!--CDN<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<script type="text/javascript" src="libraries/jquery.min.js"></script>
 <link href="libraries/prism.css" rel="stylesheet" />
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!--<link rel="stylesheet" href="libraries/w3.css">-->
+<!--CDN<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="libraries/w3.css">
 <script src="libraries/prism.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +18,7 @@ body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
-    overflow:hidden;
+    overflow:visible;
 }
 
 /* Create a Parallax Effect */
@@ -64,19 +64,19 @@ body, html {
     left: 0;
     top: 0;
     z-index: 10;
-  }
+}
 
   
 </style>
 <body>
 
-<!-- Loading Splash Screen -->
 <div id="splash-screen" class="w3-container w3-white w3-center">
 	<div class="w3-display-middle">
 		<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
 		<p>Loading...</p>
 	</div>
 </div>
+
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -87,9 +87,7 @@ body, html {
     <a class="to-the-top w3-bar-item w3-button">HOME</a>
     <a class="to-about-me w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a class="to-my-project w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECT</a>
-    <a class="to-contact w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
+    <a class="to-contact w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>      
     </a>
   </div>
 
@@ -98,14 +96,13 @@ body, html {
     <a class="to-about-me w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a class="to-my-project w3-bar-item w3-button" onclick="toggleFunction()">PROJECT</a>
     <a class="to-contact w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="to-about-me w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CowDink</span>
+    <span class="to-about-me w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Indmind</span>
   </div>
 </div>
 
@@ -117,15 +114,15 @@ body, html {
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
     qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   <pre><code class="language-javascript">
-  if(this.test.code() == getStatus.work()){
-  	this.load.happy().full();
-  }else{
-  	this.set = function(){
+if(this.test.code() == getStatus.work()){
+	this.load.happy().full();
+}else{
+    this.set = function(){
   		reSetting.library();
-  	}
-  	var moto = "never give up!";
-  	print(moto);	
-  }
+    }
+    var moto = "never give up!";
+	print(moto);	
+}
   </code></pre>
   <p>Integer pretium leo eu nisi aliquet interdum in id nulla. 
 	 Nunc luctus convallis orci nec vulputate. Pellentesque et consectetur est, ut malesuada nisi. 
@@ -136,28 +133,32 @@ body, html {
 	 Morbi congue sapien vulputate dui sagittis, in faucibus ipsum mattis. Fusce ut eros ac erat ornare rutrum volutpat eu turpis. 
 	 Duis sapien turpis, gravida eu purus sed, semper dictum sem.
   </p>
-  <pre><code class="language-php">
-  &lt;?php
-  $name = "Linus Trovald";
-  $motto = "Most good programmers do programming not because they expect
-		    to get paid or get adulation by the public, but because it is 
-            fun to program.";
-  if($motto.isRight()){
-  	do.coding();
-  }else{
-  	switch($motto.bad()){
-  		case 1:
-  		do.gaming();
-  		break;
-  		case 2:
-  		do.design();
-  		break;
-  		case 3:
-  		do.sleep();
-  		break;
-  	}
-  }
-  ?&gt;
+  <pre data-line="5-7"><code class="language-php">
+&lt;?php
+
+$name = "Linus Trovald";
+$motto = "Most good programmers do programming not because they expect
+		  to get paid or get adulation by the public, but because it is 
+          fun to program.";
+if($motto.isRight()){
+	do.coding();
+}else{
+    switch($motto.bad()){
+    	case 1:
+    		do.gaming();
+  	  	break;
+    	case 2:
+  	  	do.design();
+    		break;
+    	case 3:
+  	  	do.sleep();
+    		break;
+    	default:
+    		do.eat();
+    }
+}
+
+?&gt;
   </code></pre>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
@@ -167,7 +168,7 @@ body, html {
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>this page is the main page for all my project, you can directly see my project on my <a href="github.com/cowdink">GitHub</a> account.</p>
+      <p>this page is the main page for all my project, you can directly see my project on my <a href="github.com/indmind">GitHub</a> account.</p>
       <p>Integer pretium leo eu nisi aliquet interdum in id nulla. 
 	 Nunc luctus convallis orci nec vulputate. Pellentesque et consectetur est, ut malesuada nisi. 
 	 Phasellus mattis finibus dignissim. Nunc vestibulum nisi eget commodo convallis. 
@@ -323,7 +324,7 @@ body, html {
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Batu, Jawatimur, Indonesia<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +62 8885504740<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail.cowdink@gmail.com<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail.indmind@gmail.com<br>
       </div>
       <p>I'm ready for a gift <i class="fa fa-gift"></i>, or leave me a note:</p>
       <div id="mail-success-alert" class="w3-green w3-display-container w3-padding w3-margin-bottom">
@@ -365,7 +366,7 @@ body, html {
   <div class="w3-xlarge w3-section">
     <a href="http://www.facebook.com/rehan.syahputra.7792"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
     <a href="#"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="http://github.com/cowdink"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="http://github.com/indmind"><i class="fa fa-github w3-hover-opacity"></i></a>
     <a href="http://www.stackoverflow.com/users/7343110/rehan-syahputra"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
     <a href="http://www.steamcommunity.com/id/xnyhz"><i class="fa fa-steam w3-hover-opacity"></i></a>
   </div>
@@ -468,7 +469,7 @@ $('#mailer-submit').click(function(){
 	
 	try{
 	if(mName && mEmail && mMess && validateEmail(mEmail)){
-		mMess += " Write with love by "+mName;
+		mMess += " <br>Write with love by "+mName;
 		
 	emailjs.init("user_exTxG2pfF22CpBi5quB8e");
 	// parameters: service_id, template_id, template_parameters
@@ -476,8 +477,8 @@ $('#mailer-submit').click(function(){
 		"from_email": mEmail,
 		"name": mName,
 		"reply_email": mEmail,
-		"reply_to": "cowdink page",
-		"to_name":"cowdink",
+		"reply_to": "indmind page",
+		"to_name":"indmind",
 		"from_name": mName,
 		"message_html": mMess
 	}).then(function(response) {
@@ -616,6 +617,5 @@ function toggleFunction() {
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKDEQCyTBlBScYlSkWUC5B6hMJkPUPTUs&callback=myMap"></script>
-
 </body>
 </html>
