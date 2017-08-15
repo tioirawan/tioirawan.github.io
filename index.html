@@ -505,8 +505,11 @@ $('#mailer-submit').click(function(){
 		$('html, body').animate({
         	scrollTop: $("#go-here").offset().top
     	}, 800);
+        for(var errM in err){
+            errMess += err[errM]+" ";
+        }
 	    $('#mail-sending-alert').hide();
-        $('#mail-alert-error').html("<p>Failed to send your message...<br>"+err+"</p>");
+        $('#mail-alert-error').html("<p>Failed to send your message...<br>"+errMess+"</p>");
 	    $('#mail-failed-alert').show();
 	});
 	}else{
