@@ -18,7 +18,7 @@ body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
-    overflow:visible;
+    overflow:hidden;
 }
 
 /* Create a Parallax Effect */
@@ -377,26 +377,32 @@ if($motto.isRight()){
 <script>
 	
 window.onload = function(){
+    // splash screen disembunyikan jika page sudah terload
 	$('#splash-screen').hide();
 	$('body, html').css("overflow", "visible")
 }
 
 $(function(){
 	
+// email name handler
 $("#mailer-name").keyup(function(event){
 	if(event.keyCode == 13 || event.keyCode == 9){
     	$('#mailer-email').focus();
 	}
 });
+
+// email email handler
 $("#mailer-email").keyup(function(event){
 	if(event.keyCode == 13 || event.keyCode == 9){
     	$('#mailer-message').focus();
 	}
 });
 
+// menyembunyikan semua alert mailer
 $('#mail-success-alert').hide();
 $('#mail-failed-alert').hide();
 $('#mail-sending-alert').hide();
+
 /** send mail ajax request (dont work on github.io)
 $('#mailer-submit').click(function(){
 	try{
@@ -454,19 +460,24 @@ message: 'This is awesome!'
 
 //send mail via MailJs
 $('#mailer-submit').click(function(){
+    // menampilkan alert mengirim pesan
 	$('#mail-sending-alert').show();
+    // menyembunyikan alert sukses
 	$('#mail-success-alert').hide();
+    // menyembunyikan alert failed
 	$('#mail-failed-alert').hide();
 	
 	$('html, body').animate({
         scrollTop: $("#go-here").offset().top
     }, 800);
 	
+    // mengambil semua value mailer
 	var mName = $('#mailer-name').val();
 	var mEmail = $('#mailer-email').val();
 	var mMess = $('#mailer-message').val();
 	var errMess = "";
 	
+    // mengirim pesan via email.js
 	try{
 	if(mName && mEmail && mMess && validateEmail(mEmail)){
 		mMess += " <br>Write with love by "+mName;
@@ -489,20 +500,24 @@ $('#mailer-submit').click(function(){
     	$('#mailer-name').val("");
 		$('#mailer-email').val("");
 		$('#mailer-message').val("");
+        // menampilkan alert sukses dan otomatis menutupnya selama 1 menit
 		$('#mail-success-alert').show();
 		setTimeout(function(){
 			$('#mail-success-alert').hide();
-		}, 10000);
+		}, 60000);
 		
 	}, function(err) {
+        // jika terjadi error seperti koneksi terputus
 		$('html, body').animate({
         	scrollTop: $("#go-here").offset().top
     	}, 800);
 	    $('#mail-sending-alert').hide();
-   	 $('#mail-alert-error').html("<p>Failed to send your message...</p>");
+        $('#mail-alert-error').html("<p>Failed to send your message...<br>"+err+"</p>");
 	    $('#mail-failed-alert').show();
 	});
 	}else{
+        // jika mailer belum lengkap
+        // validasi mailer
 		if(!mName){
 			errMess += "<p>What is your name?</p>";
 		}
