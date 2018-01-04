@@ -3,631 +3,208 @@
 <title>Indmind</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--CDN<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-<script type="text/javascript" src="libraries/jquery.min.js"></script>
-<link href="libraries/prism.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script type="text/javascript" src="libraries/jquery.min.js"></script>-->
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<!--CDN<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-<link rel="stylesheet" href="libraries/w3.css">
-<script src="libraries/prism.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--<link rel="stylesheet" href="libraries/w3.css">-->
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-    overflow:hidden;
-}
+<link rel="stylesheet" href="./stye.css">
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('images/parallax1.png');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("images/parallax2.png");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("images/parallax3.png");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-
-#splash-screen {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 10;
-}
-
-  
-</style>
 <body>
 
-<div id="splash-screen" class="w3-container w3-white w3-center">
-	<div class="w3-display-middle">
-		<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-		<p>Loading...</p>
-	</div>
-</div>
-
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a class="to-the-top w3-bar-item w3-button">HOME</a>
-    <a class="to-about-me w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a class="to-my-project w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECT</a>
-    <a class="to-contact w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>      
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a class="to-about-me w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a class="to-my-project w3-bar-item w3-button" onclick="toggleFunction()">PROJECT</a>
-    <a class="to-contact w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="to-about-me w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Indmind</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love programming</em></p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <pre><code class="language-javascript">
-if(this.test.code() == getStatus.work()){
-	this.load.happy().full();
-}else{
-    this.set = function(){
-  		reSetting.library();
-    }
-    var moto = "never give up!";
-	print(moto);	
-}
-  </code></pre>
-  <p>Integer pretium leo eu nisi aliquet interdum in id nulla. 
-	 Nunc luctus convallis orci nec vulputate. Pellentesque et consectetur est, ut malesuada nisi. 
-	 Phasellus mattis finibus dignissim. Nunc vestibulum nisi eget commodo convallis. 
-	 Donec tempor libero ipsum, eu commodo lorem rhoncus eu. Donec tristique convallis lorem, sed pharetra eros fringilla eget. 
-	 Morbi vitae nibh non mauris volutpat eleifend vel eget metus. In quis sem turpis. Curabitur ut arcu nibh. 
-	 Quisque eu dictum nulla. Aliquam eu sem id nibh varius mollis quis euismod elit. Suspendisse molestie porta ligula vel posuere. 
-	 Morbi congue sapien vulputate dui sagittis, in faucibus ipsum mattis. Fusce ut eros ac erat ornare rutrum volutpat eu turpis. 
-	 Duis sapien turpis, gravida eu purus sed, semper dictum sem.
-  </p>
-  <pre data-line="5-7"><code class="language-php">
-&lt;?php
-
-$name = "Linus Trovald";
-$motto = "Most good programmers do programming not because they expect
-		  to get paid or get adulation by the public, but because it is 
-          fun to program.";
-if($motto.isRight()){
-	do.coding();
-}else{
-    switch($motto.bad()){
-    	case 1:
-    		do.gaming();
-  	  	break;
-    	case 2:
-  	  	do.design();
-    		break;
-    	case 3:
-  	  	do.sleep();
-    		break;
-    	default:
-    		do.eat();
-    }
-}
-
-?&gt;
-  </code></pre>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="images/pp.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>this page is the main page for all my project, you can directly see my project on my <a href="github.com/indmind">GitHub</a> account.</p>
-      <p>Integer pretium leo eu nisi aliquet interdum in id nulla. 
-	 Nunc luctus convallis orci nec vulputate. Pellentesque et consectetur est, ut malesuada nisi. 
-	 Phasellus mattis finibus dignissim. Nunc vestibulum nisi eget commodo convallis. 
-	 Donec tempor libero ipsum, eu commodo lorem rhoncus eu. Donec tristique convallis lorem, sed pharetra eros fringilla eget. 
-	 Morbi vitae nibh non mauris volutpat eleifend vel eget metus. In quis sem turpis. Curabitur ut arcu nibh. 
-	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-     Ut enim ad minim veniam.
-      </p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im good at:</p>
-  <p class="w3-wide"><i class="fa fa-code"></i>Programming</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-gamepad"></i>Gaming</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%">40%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Game Developing</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Developing</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:55%">55%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-bug"></i>Debugging</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:30%">30%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Designing</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:25%">25%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-female"></i>Socializing</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:5%">5%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-spoon"></i>Eat</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-child"></i>Others</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
-  </div>
-</div>
-
-<!--
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
--->
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PROJECT</span>
-  </div>
-</div>
-
-<!-- Container (PROJECT Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my work.<br> Actualy nothing :'(</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <!--
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="images/p1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="images/p2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="images/p3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="images/p4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="images/p5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="images/p6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="images/p7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="images/p8.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-  -->
-  	
-  
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">CONTACT ME</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel" id="go-here">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Batu, Jawatimur, Indonesia<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +62 8885504740<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail.indmind@gmail.com<br>
-      </div>
-      <p>I'm ready for a gift <i class="fa fa-gift"></i>, or leave me a note:</p>
-      <div id="mail-success-alert" class="w3-green w3-display-container w3-padding w3-margin-bottom">
-      	<span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
-  		<h3>Success!</h3>
-  		<p>Your email has been sended! thanks for your time.</p>
-	  </div> 
-	  <div id="mail-failed-alert" class="w3-red w3-display-container w3-padding w3-margin-bottom">
-      	<span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
-  		<h3>Error!</h3>
-  		<span id="mail-alert-error"></span>
-	  </div> 
-	  <div id="mail-sending-alert" class="w3-blue w3-display-container w3-padding w3-margin-bottom" style="z-index:9;">
-      	<span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
-  		<h3>Sending...</h3>
-  		<p>please wait...</p>
-	  </div> 
-      <!--<form action="/action_page.php" target="_blank">-->
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input id="mailer-name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input id="mailer-email" class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
-          </div>
+    <div id="splash-screen" class="w3-container w3-center">
+        <div class="w3-display-middle">
+            <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+            <p>Loading...</p>
         </div>
-        <textarea id="mailer-message" class="w3-input w3-border" rows="5" placeholder="Message" required name="Message"></textarea>
-        <button id="mailer-submit" class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      <!--</form>-->
     </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a class="to-the-top w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="http://www.facebook.com/rehan.syahputra.7792"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="#"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="http://github.com/indmind"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="http://www.stackoverflow.com/users/7343110/rehan-syahputra"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
-    <a href="http://www.steamcommunity.com/id/xnyhz"><i class="fa fa-steam w3-hover-opacity"></i></a>
-  </div>
-  
-</footer>
- 
-<!-- Add Google Maps -->
-<script>
-	
-window.onload = function(){
-    // splash screen disembunyikan jika page sudah terload
-	$('#splash-screen').hide();
-	$('body, html').css("overflow", "visible")
-}
 
-$(function(){
-	
-// email name handler
-$("#mailer-name").keyup(function(event){
-	if(event.keyCode == 13 || event.keyCode == 9){
-    	$('#mailer-email').focus();
-	}
-});
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
 
-// email email handler
-$("#mailer-email").keyup(function(event){
-	if(event.keyCode == 13 || event.keyCode == 9){
-    	$('#mailer-message').focus();
-	}
-});
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
 
-// menyembunyikan semua alert mailer
-$('#mail-success-alert').hide();
-$('#mail-failed-alert').hide();
-$('#mail-sending-alert').hide();
+            <a class="to-the-top w3-bar-item w3-button">
+                <i class="fa fa-home"></i> HOME
+            </a>
 
-/** send mail ajax request (dont work on github.io)
-$('#mailer-submit').click(function(){
-	try{
-	var mName = escape($('#mailer-name').val());
-	var mEmail = escape($('#mailer-email').val());
-	var mMess = escape($('#mailer-message').val());
-	var errMess = "";
-	
-	if(mName && mEmail && mMess){
-		mMess += " Write with love by "+mName;
-		
-	$.ajax({
-		type: "GET",
-		url: "http://www.bankrut.16mb.com/mail_sender.php",
-		data: "from="+mEmail+"&subject=github+main+page&message="+mMess,
-		success: function(response){
-			//gak work
-			alert(response);
-		}
-	});
-		$('#mailer-name').val("");
-		$('#mailer-email').val("");
-		$('#mailer-message').val("");
-		$('#mail-success-alert').show();
-		$('#mail-success-alert').focus();
-		
-	}else{
-		if(!mName){
-			errMess += "<p>What your name?</p>";
-			
-		}
-		if(!mEmail){
-			errMess += "<p>What your email?</p>";
-			
-		}
-		if(!mMess){
-			errMess += "<p>What your messages to me?</p>";
-			
-		}
-		$('#mail-alert-error').html(errMess);
-		$('#mail-failed-alert').show();
-	}
-	}catch(err){
-		alert(err);
-	}
-	
-});
-**/
+            <a class="to-about-me w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-user"></i> ABOUT
+            </a>
 
-//send mail via MailJs
-$('#mailer-submit').click(function(){
-    // menampilkan alert mengirim pesan
-	$('#mail-sending-alert').show();
-    // menyembunyikan alert sukses
-	$('#mail-success-alert').hide();
-    // menyembunyikan alert failed
-	$('#mail-failed-alert').hide();
-	
-	$('html, body').animate({
-        scrollTop: $("#go-here").offset().top
-    }, 800);
-	
-    // mengambil semua value mailer
-	var mName = $('#mailer-name').val();
-	var mEmail = $('#mailer-email').val();
-	var mMess = $('#mailer-message').val();
-	var errMess = "";
-	
-    // mengirim pesan via email.js
-	try{
-	if(mName && mEmail && mMess && validateEmail(mEmail)){
-		mMess += " <br>Write with love by "+mName;
-		
-	emailjs.init("user_exTxG2pfF22CpBi5quB8e");
-	// parameters: service_id, template_id, template_parameters
-	emailjs.send("gmail", "template_xN7dwP1P", {
-		"from_email": mEmail,
-		"name": mName,
-		"reply_email": mEmail,
-		"reply_to": "indmind page",
-		"to_name":"indmind",
-		"from_name": mName,
-		"message_html": mMess
-	}).then(function(response) {
-		$('html, body').animate({
-        	scrollTop: $("#go-here").offset().top
-   	 }, 800);
-		$('#mail-sending-alert').hide();
-    	$('#mailer-name').val("");
-		$('#mailer-email').val("");
-		$('#mailer-message').val("");
-        // menampilkan alert sukses dan otomatis menutupnya selama 1 menit
-		$('#mail-success-alert').show();
-		setTimeout(function(){
-			$('#mail-success-alert').hide();
-		}, 60000);
-		
-	}, function(err) {
-        // jika terjadi error seperti koneksi terputus
-		$('html, body').animate({
-        	scrollTop: $("#go-here").offset().top
-    	}, 800);
-        for(var errM in err){
-            errMess += err[errM]+" ";
-        }
-	    $('#mail-sending-alert').hide();
-        $('#mail-alert-error').html("<p>Failed to send your message...<br>"+errMess+"</p>");
-	    $('#mail-failed-alert').show();
-	});
-	}else{
-        // jika mailer belum lengkap
-        // validasi mailer
-		if(!mName){
-			errMess += "<p>What is your name?</p>";
-		}
-		if(!mEmail){
-			errMess += "<p>What is your email?</p>";
-		}
-		if(!mMess){
-			errMess += "<p>What is your messages to me?</p>";
-		}
-		if(mEmail && !validateEmail(mEmail)){
-			errMess += "<p>Your email format is wrong!</p>";
-		}
-		$('html, body').animate({
-      	  scrollTop: $("#go-here").offset().top
-    	}, 800);
-		$('#mail-sending-alert').hide();
-		$('#mail-alert-error').html(errMess);
-		$('#mail-failed-alert').show();
-	}
-	}catch(err){
-		$('#mail-sending-alert').hide();
-		alert(err);
-	}
-});
-	
-function validateEmail(email) {
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
-}
-	
-$(".to-the-top").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#home").offset().top
-    }, 2000);
-    var x = document.getElementById("navDemo");
-    x.className = x.className.replace(" w3-show", "");
-   
-});
+            <a class="to-my-project w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th"></i> PROJECT
+            </a>
 
-$(".to-about-me").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 2000);
-    var x = document.getElementById("navDemo");
-    x.className = x.className.replace(" w3-show", "");
-});
+            <a class="to-contact w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-envelope"></i> CONTACT
+            </a>
+        </div>
 
-$(".to-my-project").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#portfolio").offset().top
-    }, 2000);
-    var x = document.getElementById("navDemo");
-    x.className = x.className.replace(" w3-show", "");
-});
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-opacity w3-hide w3-hide-large w3-hide-medium">
+            <a class="to-about-me w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a class="to-my-project w3-bar-item w3-button" onclick="toggleFunction()">PROJECT</a>
+            <a class="to-contact w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
 
-$(".to-contact").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
-    }, 2000);
-    var x = document.getElementById("navDemo");
-    x.className = x.className.replace(" w3-show", "");
-});
-});
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle main-button " style="white-space:nowrap;">
+            <span class="main-button-span darker-blue to-about-me w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Indmind</span>
+        </div>
+    </div>
 
-try{
-function myMap()
-{
-  myCenter=new google.maps.LatLng(-7.872619,112.530876);
-  var mapOptions= {
-    center:myCenter,
-    zoom:14, scrollwheel: true, draggable: true,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-}catch(err){
-	alert(err);
-}
+        <p class="w3-center">
+            <em>i don't even know myself</em>
+        </p>
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+        <p>This is just for teting, Idk what to do</p>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
+        <div class="w3-container w3-left  w3-padding">
+            <p>
+                <b>
+                    <i class="fa fa-user w3-margin-right"></i>Indmind
+                </b>
+            </p>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKDEQCyTBlBScYlSkWUC5B6hMJkPUPTUs&callback=myMap"></script>
+            <br>
+
+            <a href="https://github.com/Indmind">
+                <img src="https://avatars2.githubusercontent.com/u/29256127?s=460&v=4" class="profile-picture w3-round w3-image w3-opacity w3-hover-opacity-off"
+                    alt="Photo of Me">
+            </a>
+
+            <p>You can see my project on my
+                <a href="github.com/indmind">GitHub</a> account.</p>
+
+            <p>Nothing here</p>
+        </div>
+
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PROJECT</span>
+        </div>
+    </div>
+
+    <!-- Container (PROJECT Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center">
+            <em>Here are some of my work.
+                <br> Actualy nothing :'(
+            </em>
+        </p>
+        <br>
+
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+            <i class="fa fa-remove"></i>
+        </span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">CONTACT ME</h3>
+        <p class="w3-center">
+            <em>I'd love your feedback!</em>
+        </p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <!-- Add Google Maps -->
+                <div id="googleMap" class="w3-round-large w3-greyscale"></div>
+            </div>
+            <div class="w3-col m8 w3-panel" id="go-here">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Batu, Jawatimur, Indonesia
+                    <br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +62 8885504740
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail.indmind@gmail.com
+                    <br>
+                </div>
+                <p>I'm ready for a gift
+                    <i class="fa fa-gift"></i>, or leave me a note:</p>
+                <div id="mail-success-alert" class="w3-green w3-display-container w3-padding w3-margin-bottom">
+                    <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
+                    <h3>Success!</h3>
+                    <p>Your email has been sended! thanks for your time.</p>
+                </div>
+                <div id="mail-failed-alert" class="w3-red w3-display-container w3-padding w3-margin-bottom">
+                    <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
+                    <h3>Error!</h3>
+                    <span id="mail-alert-error"></span>
+                </div>
+                <div id="mail-sending-alert" class="w3-blue w3-display-container w3-padding w3-margin-bottom" style="z-index:9;">
+                    <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
+                    <h3>Sending...</h3>
+                    <p>please wait...</p>
+                </div>
+                <!--<form action="/action_page.php" target="_blank">-->
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input id="mailer-name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    <div class="w3-half">
+                        <input id="mailer-email" class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <textarea id="mailer-message" class="w3-input w3-border" rows="5" placeholder="Message" required name="Message"></textarea>
+                <button id="mailer-submit" class="w3-button w3-round darker-blue w3-right w3-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+                <!--</form>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity">
+
+        <a class="to-the-top bottom-button w3-button w3-round w3-blue">
+            <i class="fa fa-arrow-up w3-margin-right"></i>To the top
+        </a>
+
+        <br>
+
+        <a href="http://github.com/indmind">
+            <i class="fa fa-github w3-hover-opacity w3-xxlarge"></i>
+        </a>
+
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKDEQCyTBlBScYlSkWUC5B6hMJkPUPTUs&callback=myMap"></script>
 </body>
+
 </html>
