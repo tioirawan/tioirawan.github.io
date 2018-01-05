@@ -96,7 +96,7 @@ p {
 
 /* big */
 
-@media screen and (min-width: 500px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 500px) {
     .main-button {
         left: 20%;
     }
