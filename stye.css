@@ -35,21 +35,21 @@ p {
 /* First image (Logo. Full height) */
 
 .bgimg-1 {
-    background-image: url("images/parallax1.jpg");
+    background-image: url("images/parallax1.png");
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 
 .bgimg-2 {
-    background-image: url("images/parallax2.jpg");
+    background-image: url("images/parallax2.png");
     min-height: 100%;
 }
 
 /* Third image (Contact) */
 
 .bgimg-3 {
-    background-image: url("images/parallax3.jpg");
+    background-image: url("images/parallax3.png");
     min-height: 100%;
 }
 
