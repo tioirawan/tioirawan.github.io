@@ -3,24 +3,23 @@
 <title>Indmind</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--<script type="text/javascript" src="libraries/jquery.min.js"></script>-->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!--<link rel="stylesheet" href="libraries/w3.css">-->
 <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./stye.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script type="text/javascript" src="libraries/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 <body>
 
     <div id="splash-screen" class="w3-container w3-center">
         <div class="w3-display-middle">
-            <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-            <p>Loading...</p>
+            <i class="loading-icon fas fa-cog fa-spin"></i>
+            <p class="loading-text">Loading...</p>
         </div>
     </div>
-
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -59,7 +58,7 @@
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle main-button " style="white-space:nowrap;">
-            <span class="main-button-span darker-blue to-about-me w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Indmind</span>
+            <span class="main-button-span limed-spruce to-about-me w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">Indmind</span>
         </div>
     </div>
 
@@ -111,7 +110,6 @@
             </em>
         </p>
         <br>
-
     </div>
 
     <!-- Modal for full size images on click-->
@@ -155,17 +153,17 @@
                 </div>
                 <p>I'm ready for a gift
                     <i class="fa fa-gift"></i>, or leave me a note:</p>
-                <div id="mail-success-alert" class="w3-green w3-display-container w3-padding w3-margin-bottom">
+                <div id="mail-success-alert" class="w3-display-container w3-padding w3-margin-bottom">
                     <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
                     <h3>Success!</h3>
                     <p>Your email has been sended! thanks for your time.</p>
                 </div>
-                <div id="mail-failed-alert" class="w3-red w3-display-container w3-padding w3-margin-bottom">
+                <div id="mail-failed-alert" class="w3-display-container w3-padding w3-margin-bottom">
                     <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
                     <h3>Error!</h3>
                     <span id="mail-alert-error"></span>
                 </div>
-                <div id="mail-sending-alert" class="w3-blue w3-display-container w3-padding w3-margin-bottom" style="z-index:9;">
+                <div id="mail-sending-alert" class="w3-display-container w3-padding w3-margin-bottom" style="z-index:9;">
                     <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
                     <h3>Sending...</h3>
                     <p>please wait...</p>
@@ -180,7 +178,7 @@
                     </div>
                 </div>
                 <textarea id="mailer-message" class="w3-input w3-border" rows="5" placeholder="Message" required name="Message"></textarea>
-                <button id="mailer-submit" class="w3-button w3-round darker-blue w3-right w3-section" type="submit">
+                <button id="mailer-submit" class="w3-button w3-round limed-spruce w3-right w3-section" type="submit">
                     <i class="fa fa-paper-plane"></i> SEND MESSAGE
                 </button>
                 <!--</form>-->
@@ -189,7 +187,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity">
+    <footer class="w3-center w3-padding-64 limed-spruce">
 
         <a class="to-the-top bottom-button w3-button w3-round w3-blue">
             <i class="fa fa-arrow-up w3-margin-right"></i>To the top
@@ -198,7 +196,7 @@
         <br>
 
         <a href="http://github.com/indmind">
-            <i class="fa fa-github w3-hover-opacity w3-xxlarge"></i>
+            <i class="fab fa-github w3-hover-opacity w3-xxlarge"></i>
         </a>
 
     </footer>

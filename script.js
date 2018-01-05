@@ -10,54 +10,11 @@ $(function () {
     $('#mail-failed-alert').hide();
     $('#mail-sending-alert').hide();
 
-    /** send mail ajax request (doesn't work on github.io)
-    $('#mailer-submit').click(function(){
-    	try{
-    	var mName = escape($('#mailer-name').val());
-    	var mEmail = escape($('#mailer-email').val());
-    	var mMess = escape($('#mailer-message').val());
-    	var errMess = "";
-    	
-    	if(mName && mEmail && mMess){
-    		mMess += " Write with love by "+mName;
-    		
-    	$.ajax({
-    		type: "GET",
-    		url: "http://www.bankrut.16mb.com/mail_sender.php",
-    		data: "from="+mEmail+"&subject=github+main+page&message="+mMess,
-    		success: function(response){
-    			//gak work
-    			alert(response);
-    		}
-    	});
-    		$('#mailer-name').val("");
-    		$('#mailer-email').val("");
-    		$('#mailer-message').val("");
-    		$('#mail-success-alert').show();
-    		$('#mail-success-alert').focus();
-    		
-    	}else{
-    		if(!mName){
-    			errMess += "<p>What your name?</p>";
-    			
-    		}
-    		if(!mEmail){
-    			errMess += "<p>What your email?</p>";
-    			
-    		}
-    		if(!mMess){
-    			errMess += "<p>What your messages to me?</p>";
-    			
-    		}
-    		$('#mail-alert-error').html(errMess);
-    		$('#mail-failed-alert').show();
-    	}
-    	}catch(err){
-    		alert(err);
-    	}
-    	
-    });
-    **/
+    $('#mailer-message').keydown(event => {
+        if ((event.keyCode == 10 || event.keyCode == 13) && event.ctrlKey){
+            $('#mailer-submit').click()
+        }
+    })
 
     //send mail via MailJs
     $('#mailer-submit').click(function () {
@@ -156,7 +113,7 @@ $(function () {
     $(".to-the-top").click(function () {
         $('html, body').animate({
             scrollTop: $("#home").offset().top
-        }, 2000);
+        }, 1500);
         var x = document.getElementById("navDemo");
         x.className = x.className.replace(" w3-show", "");
     });
@@ -164,7 +121,7 @@ $(function () {
     $(".to-about-me").click(function () {
         $('html, body').animate({
             scrollTop: $("#about").offset().top
-        }, 2000);
+        }, 1500);
         var x = document.getElementById("navDemo");
         x.className = x.className.replace(" w3-show", "");
     });
@@ -172,7 +129,7 @@ $(function () {
     $(".to-my-project").click(function () {
         $('html, body').animate({
             scrollTop: $("#portfolio").offset().top
-        }, 2000);
+        }, 1500);
         var x = document.getElementById("navDemo");
         x.className = x.className.replace(" w3-show", "");
     });
@@ -180,7 +137,7 @@ $(function () {
     $(".to-contact").click(function () {
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
-        }, 2000);
+        }, 1500);
         var x = document.getElementById("navDemo");
         x.className = x.className.replace(" w3-show", "");
     });
@@ -191,7 +148,7 @@ try {
         myCenter = new google.maps.LatLng(-7.872619, 112.530876);
         var mapOptions = {
             center: myCenter,
-            zoom: 14,
+            zoom: 3,
             scrollwheel: true,
             draggable: true,
             mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -222,7 +179,7 @@ window.onscroll = function () {
 
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " dark-blue";
     } else {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top dark-blue", "");
