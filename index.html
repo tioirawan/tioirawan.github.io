@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
-<title>Indmind</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!--<link rel="stylesheet" href="libraries/w3.css">-->
-<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-<link rel="stylesheet" href="./stye.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--<script type="text/javascript" src="libraries/jquery.min.js"></script>-->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<head>
+    <title>Indmind</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--<link rel="stylesheet" href="libraries/w3.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="./stye.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="libraries/jquery.min.js"></script>-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-112637824-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+</head>
 
 <body>
 
@@ -46,6 +68,10 @@
             <a class="to-contact w3-bar-item w3-button w3-hide-small">
                 <i class="fa fa-envelope"></i> CONTACT
             </a>
+
+            <a class="w3-bar-item w3-button w3-hide-small" href="https://indmind.github.io/blog/">
+                <i class="fa fa-edit"></i> BLOG
+            </a>
         </div>
 
         <!-- Navbar on small screens -->
@@ -53,6 +79,7 @@
             <a class="to-about-me w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
             <a class="to-my-project w3-bar-item w3-button" onclick="toggleFunction()">PROJECT</a>
             <a class="to-contact w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
         </div>
     </div>
 
