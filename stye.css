@@ -80,12 +80,11 @@ p {
     }
 }
 
-
 .main-button {
     cursor: pointer;
 }
 
-.main-button > span {
+.main-button>span {
     font-weight: bold;
     border-radius: 5px;
 }
@@ -143,23 +142,22 @@ p {
     margin-top: 0px;
 }
 
-
-#mail-sending-alert{
+#mail-sending-alert {
     border-radius: 5px;
     background-color: #2980b9;
 }
 
-#mail-success-alert{
+#mail-success-alert {
     border-radius: 5px;
     background-color: #2ecc71;
 }
 
-#mail-failed-alert{
+#mail-failed-alert {
     border-radius: 5px;
     background-color: #e74c3c;
 }
 
 .w3-button:hover {
     color: #ecf0f1 !important;
-    background-color: #2980b9!important;
+    background-color: #2980b9 !important;
 }

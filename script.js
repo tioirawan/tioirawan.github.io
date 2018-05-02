@@ -11,7 +11,7 @@ $(function () {
     $('#mail-sending-alert').hide();
 
     $('#mailer-message').keydown(event => {
-        if ((event.keyCode == 10 || event.keyCode == 13) && event.ctrlKey){
+        if ((event.keyCode == 10 || event.keyCode == 13) && event.ctrlKey) {
             $('#mailer-submit').click()
         }
     })
