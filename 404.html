@@ -14,12 +14,13 @@
     <style>
         .bg-404 {
             background-attachment: fixed;
-            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             background-image: url("images/parallax3.png");
             min-height: 100%;
             text-align: center;
+            width: 100%;
+            height: auto;
         }
 
         .gohome-404 {
@@ -28,6 +29,8 @@
 
         .text-404 {
             font-size: 4em;
+            top: 50px;
+            position: relative;
         }
 
         .desc-404 {
@@ -35,11 +38,20 @@
         }
 
         @media only screen and (max-width: 835px) {
-            .text-404 {
-                font-size: 3em;
-            }
             .desc-404 {
                 font-size: 1.5em;
+            }
+
+            .container-404 {
+                background-color: rgba(0, 0, 0, 0.300);
+                border-radius: 10px;
+                padding: 40px;
+            }
+        }
+
+        @media only screen and (max-width: 587px) {
+            .text-404 {
+                top: 0;
             }
         }
     </style>
@@ -47,9 +59,9 @@
 
 <body>
     <div class="bg-404 w3-opacity-min">
-        <div class="w3-display-middle">
+        <div class="w3-display-middle container-404">
             <span class="w3-text-white w3-wide">
-                <img src="favicon.ico">
+                <img src="/favicon.ico">
             </span>
             <span class="text-404">404</span>
             <br>
