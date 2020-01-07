@@ -3,8 +3,10 @@ window.onload = () => {
     $('body, html').css('overflow', 'visible');
 };
 
+
 $(() => {
-    const navbar = document.getElementById('mainNavbar');
+
+    const navbar = document.getElementById('myNavbar');
 
     $('#mail-success-alert').hide();
     $('#mail-failed-alert').hide();
@@ -208,6 +210,8 @@ function onClick(element) {
 
 // Change style of navbar on scroll
 window.onscroll = () => {
+    const navbar = document.getElementById('myNavbar');
+
     if (
         document.body.scrollTop > 200 ||
         document.documentElement.scrollTop > 200
@@ -224,6 +228,8 @@ window.onscroll = () => {
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
+    const navbar = document.getElementById('mainNavbar');
+
     if (!navbar.className.includes('w3-show')) {
         navbar.className += ' w3-show';
     } else {
