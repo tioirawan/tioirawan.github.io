@@ -1,236 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <title>Indmind</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!--<link rel="stylesheet" href="libraries/w3.css">-->
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-    <link rel="stylesheet" href="./stye.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="libraries/jquery.min.js"></script>-->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- Google Analytics -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <script src="https://kit.fontawesome.com/0741d250de.js" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-        ga('create', 'UA-112637824-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
-</head>
+    <script src="script.js"></script>
 
-<body>
+    <title>dvync</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
 
-    <div id="splash-screen" class="w3-container w3-center">
-        <div class="w3-display-middle">
-            <i class="loading-icon fas fa-cog fa-spin"></i>
-            <p class="loading-text">Loading...</p>
-        </div>
+    <div class="header">
+      <h1 class="title">indmind/dvync</h1>
+      <p class="description">Novice.</p>
+
+      <div class="contact-list">
+        <a href="https://www.linkedin.com/in/tioirawan/" class="contact-button"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/indmind" class="contact-button"><i class="fab fa-github"></i></a>
+        <a href="http://indmind.github.io/blog" class="contact-button"><i class="fas fa-blog"></i></a>
+        <a href="https://www.facebook.com/dvync" class="contact-button"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/dvync_" class="contact-button"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
-
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
-                title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </a>
-
-            <a class="to-the-top w3-bar-item w3-button">
-                <i class="fa fa-home"></i> HOME
-            </a>
-
-            <a class="to-about-me w3-bar-item w3-button w3-hide-small">
-                <i class="fa fa-user"></i> ABOUT
-            </a>
-
-            <a class="to-my-project w3-bar-item w3-button w3-hide-small">
-                <i class="fa fa-th"></i> PROJECT
-            </a>
-
-            <a class="to-contact w3-bar-item w3-button w3-hide-small">
-                <i class="fa fa-envelope"></i> CONTACT
-            </a>
-
-            <a class="w3-bar-item w3-button w3-hide-small" href="/blog">
-                <i class="fa fa-edit"></i> BLOG
-            </a>
-        </div>
-
-        <!-- Navbar on small screens -->
-        <div id="mainNavbar" class="w3-bar-block w3-opacity w3-hide w3-hide-large w3-hide-medium">
-            <a class="to-about-me w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a class="to-my-project w3-bar-item w3-button" onclick="toggleFunction()">PROJECT</a>
-            <a class="to-contact w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a class="w3-bar-item w3-button" href="/blog">BLOG</a>
-        </div>
-    </div>
-
-    <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-        <div class="w3-display-middle main-button " style="white-space:nowrap;">
-            <span class="main-button-span limed-spruce to-about-me w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">Indmind</span>
-        </div>
-    </div>
-
-    <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">ABOUT ME</h3>
-
-        <p class="w3-center">
-            <em>i don't even know myself</em>
+    <div class="content">
+      <article>
+        <h2>About Me!</h2>
+        <p>
+            Want to know about me? go check out my GitHub page! If you have any question, don't hesitate to ask &#x1F604;.
         </p>
-
-        <p>This is just for testing, Idk what to do</p>
-
-        <div class="w3-container w3-left  w3-padding">
-            <p>
-                <b>
-                    <i class="fa fa-user w3-margin-right"></i>Indmind
-                </b>
-            </p>
-
-            <br>
-
-            <a href="https://github.com/Indmind">
-                <img src="https://avatars2.githubusercontent.com/u/29256127?s=460&v=4" class="profile-picture w3-round w3-image w3-opacity w3-hover-opacity-off"
-                    alt="Photo of Me">
-            </a>
-
-            <p>You can see my project on my
-                <a href="http://github.com/indmind">GitHub</a> profile.</p>
-
-            <p>Nothing here</p>
-        </div>
-
+      </article>
     </div>
-
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">PROJECT</span>
-        </div>
-    </div>
-
-    <!-- Container (PROJECT Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">MY WORK</h3>
-        <p class="w3-center">
-            <em>Here are some of my work.
-                <br> Actualy nothing :'(
-            </em>
-        </p>
-        <br>
-    </div>
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
-            <i class="fa fa-remove"></i>
-        </span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
-    </div>
-
-    <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-        </div>
-    </div>
-
-    <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
-        <h3 class="w3-center">CONTACT ME</h3>
-        <p class="w3-center">
-            <em>I'd love your feedback!</em>
-        </p>
-
-        <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container">
-                <!-- Add Google Maps -->
-                <div id="googleMap" class="w3-round-large w3-greyscale"></div>
-            </div>
-            <div class="w3-col m8 w3-panel" id="go-here">
-                <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Batu, Jawatimur, Indonesia
-                    <br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +62 8885504740
-                    <br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail.indmind@gmail.com
-                    <br>
-                </div>
-                <p>I'm ready for a gift
-                    <i class="fa fa-gift"></i>, or leave me a note:</p>
-                <div id="mail-success-alert" class="w3-display-container w3-padding w3-margin-bottom">
-                    <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
-                    <h3>Success!</h3>
-                    <p>Your email has been sended! thanks for your time.</p>
-                </div>
-                <div id="mail-failed-alert" class="w3-display-container w3-padding w3-margin-bottom">
-                    <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
-                    <h3>Error!</h3>
-                    <span id="mail-alert-error"></span>
-                </div>
-                <div id="mail-sending-alert" class="w3-display-container w3-padding w3-margin-bottom" style="z-index:9;">
-                    <span onclick="$(this).parent().hide()" class="w3-button w3-display-topright">&times;</span>
-                    <h3>Sending...</h3>
-                    <p>please wait...</p>
-                </div>
-                <!--<form action="/action_page.php" target="_blank">-->
-                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                    <div class="w3-half">
-                        <input id="mailer-name" class="w3-input w3-border w3-round" type="text" placeholder="Name" required name="Name">
-                    </div>
-                    <div class="w3-half">
-                        <input id="mailer-email" class="w3-input w3-border w3-round" type="email" placeholder="Email" required name="Email">
-                    </div>
-                </div>
-                <textarea id="mailer-message" class="w3-input w3-border w3-round" rows="5" placeholder="Message" required name="Message"></textarea>
-                <button id="mailer-submit" class="w3-button w3-round limed-spruce w3-right w3-section" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-                <!--</form>-->
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-center w3-padding-64 limed-spruce">
-
-        <a class="to-the-top bottom-button w3-button w3-round w3-blue">
-            <i class="fa fa-arrow-up w3-margin-right"></i>To the top
-        </a>
-
-        <br>
-
-        <a href="http://github.com/indmind">
-            <i class="fab fa-github w3-hover-opacity w3-xxlarge"></i>
-        </a>
-
-    </footer>
-
-    <script src="./script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKDEQCyTBlBScYlSkWUC5B6hMJkPUPTUs&callback=myMap"></script>
-</body>
-
+  </body>
 </html>
