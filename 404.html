@@ -1,82 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <title>Indmind | 404</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-    <link rel="stylesheet" href="/stye.css">
+    <link rel="stylesheet" href="styles/404.css" />
 
-    <style>
-        .bg-404 {
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url("/images/parallax3.png");
-            min-height: 100%;
-            text-align: center;
-            width: 100%;
-            height: auto;
-        }
+    <script src="https://kit.fontawesome.com/0741d250de.js" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-        .gohome-404 {
-            border: 1px solid white;
-        }
+    <script src="scripts/main.js"></script>
 
-        .text-404 {
-            font-size: 4em;
-            top: 50px;
-            position: relative;
-        }
+    <title>Not Found</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
 
-        .desc-404 {
-            font-size: 2em;
-        }
+    <div class="header">
+      <h1 class="title">404</h1>
+      <p class="description">Looks like you got lost</p>
 
-        @media only screen and (max-width: 835px) {
-            .desc-404 {
-                font-size: 1.5em;
-            }
-
-            .container-404 {
-                background-color: rgba(0, 0, 0, 0.300);
-                border-radius: 10px;
-                padding: 40px;
-            }
-        }
-
-        @media only screen and (max-width: 587px) {
-            .text-404 {
-                top: 0;
-            }
-
-            .container-404 {
-                padding-left: 80px;
-                padding-right: 80px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="bg-404 w3-opacity-min">
-        <div class="w3-display-middle container-404">
-            <span class="w3-text-white w3-wide">
-                <img src="/favicon.ico">
-            </span>
-            <span class="text-404">404</span>
-            <br>
-            <span class="desc-404">Oops... the page you were looking for could not be found...</span>
-            <br>
-            <a href="/">
-                <button class="w3-xlarge w3-button w3-round gohome-404">Go Home</button>
-            </a>
-        </div>
+      <div class="contact-list">
+        <a href="/" class="contact-button"><i class="fas fa-home"></i></a>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
