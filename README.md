@@ -1,3 +1,3 @@
 # Nothing Here
 
-[Click this instead](https://indmind.github.io)
+[Click this instead](https://www.indmind.ga)
