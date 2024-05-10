@@ -4,12 +4,17 @@ import "../styles/global.css";
 interface Props {
   title?: string | undefined;
   description?: string | undefined;
+  image?: string | undefined;
 }
 
 const {
   title = "Tio Irawan: Personal Site",
   description = "The personal site of Tio Irawan",
+  image,
 } = Astro.props;
+
+// join Astro.site with image path
+const imageOg = new URL(image || "", Astro.site).toString();
 ---
 
 <meta charset="UTF-8" />
@@ -20,6 +25,14 @@ const {
 
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<!-- social preview -->
+<meta property="og:title" content={title} />
+<meta property="og:image" content={imageOg} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:site_name" content={title} />
+<meta property="og:description" content={description} />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
