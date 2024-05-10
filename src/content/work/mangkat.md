@@ -1,6 +1,6 @@
 ---
 title: Mangkat
-publishDate: 2024-05-09 23:47:00
+publishDate: 2023-11-10 12:47:00
 img: /assets/works/mangkat/cover.png
 img_alt: Mangkat app screenshot
 description: |

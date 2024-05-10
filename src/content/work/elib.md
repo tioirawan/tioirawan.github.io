@@ -1,6 +1,6 @@
 ---
 title: ELib
-publishDate: 2024-05-10 17:00:00
+publishDate: 2022-12-10 17:00:00
 img: /assets/works/elib/cover.png
 img_alt: Siputri - Electronic Library app screenshot
 description: |

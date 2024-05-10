@@ -1,6 +1,6 @@
 ---
 title: Buku Listrik
-publishDate: 2024-05-10 17:00:00
+publishDate: 2022-07-8 12:00:00
 img: /assets/works/buku-listrik/cover.png
 img_alt: Buku Listrik - Electricity bill app screenshot
 description: |

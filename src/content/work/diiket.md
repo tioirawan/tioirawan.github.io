@@ -1,6 +1,6 @@
 ---
 title: Diiket - Digital Market
-publishDate: 2024-05-10 17:00:00
+publishDate: 2022-08-24 14:00:00
 img: /assets/works/diiket/cover.png
 img_alt: Diiket Screenshot
 description: |

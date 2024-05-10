@@ -1,6 +1,6 @@
 ---
 title: Greeny
-publishDate: 2024-05-10 15:47:00
+publishDate: 2023-11-14 15:47:00
 img: /assets/works/greeny/cover.png
 img_alt: Greeny app screenshot
 description: |

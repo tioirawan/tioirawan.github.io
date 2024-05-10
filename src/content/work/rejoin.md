@@ -1,6 +1,6 @@
 ---
 title: Rejoin - Attendance Tracking
-publishDate: 2024-05-10 17:00:00
+publishDate: 2021-10-12 17:00:00
 img: /assets/works/rejoin/cover.png
 img_alt: Rejoin Screenshots
 description: |

@@ -1,6 +1,6 @@
 ---
 title: Game Moral Awareness
-publishDate: 2024-05-10 17:00:00
+publishDate: 2023-06-10 17:00:00
 img: /assets/works/gma/cover.png
 img_alt: Game Moral Awareness app screenshot
 description: |

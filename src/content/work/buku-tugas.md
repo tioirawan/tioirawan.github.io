@@ -1,6 +1,6 @@
 ---
 title: Buku Tugas
-publishDate: 2024-05-10 17:00:00
+publishDate: 2021-07-31 17:00:00
 img: /assets/works/buku-tugas/cover.png
 img_alt: Buku Tugas - Homework app screenshot
 description: |
