@@ -8,6 +8,7 @@ description: |
 tags:
   - Mobile
   - Game
+  - Flutter
 ---
 
 Game Moral Awareness (GMA) is a project that aims to provide a platform for individuals with mental disabilities to engage in cognitive activities that promote moral awareness and social interaction. The project is designed to be accessible to a wide range of users, including those with cognitive impairments, and offers a variety of activities that cater to different cognitive abilities. By focusing on the development of cognitive skills and moral awareness, GMA aims to enhance the quality of life for individuals with mental disabilities and promote social inclusion.

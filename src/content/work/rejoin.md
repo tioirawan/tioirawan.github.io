@@ -1,0 +1,17 @@
+---
+title: Rejoin - Attendance Tracking
+publishDate: 2024-05-10 17:00:00
+img: /assets/works/rejoin/cover.png
+img_alt: Rejoin Screenshots
+description: |
+    Attendance tracking app with location capture and selfie verification. It uses device GPS to capture where an employee is clocking in and out.
+tags:
+  - Mobile
+  - Web
+  - Flutter
+  - Laravel
+---
+
+#### Overview
+
+Rejoin is an attendance tracking app designed to simplify workforce management. It focuses on two key features: location capture and selfie verification. By using the GPS on users' devices, the app records where employees clock in and out. This helps ensure accurate attendance records and provides insights into workforce productivity. With its easy-to-use interface and advanced technology, Rejoin helps businesses manage their workforce more efficiently.

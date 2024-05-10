@@ -8,6 +8,10 @@ description: |
 tags:
   - Mobile
   - Plant
+  - Flutter
+  - Tensorflow
+  - TfLite
+  - Firebase
   - Competition Winning
 ---
 
