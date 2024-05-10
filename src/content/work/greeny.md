@@ -13,7 +13,7 @@ tags:
 
 ## Greeny
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2q5aPL7HX48?si=mnS3CZu-pPL24Mmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="300" src="https://www.youtube.com/embed/2q5aPL7HX48?si=mnS3CZu-pPL24Mmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ### Background
