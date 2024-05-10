@@ -14,12 +14,6 @@ Game Moral Awareness (GMA) is a project that aims to provide a platform for indi
 
 #### Screenshots
 
-<!-- ![Title Screen](https://play-lh.googleusercontent.com/VjhF723-vNtEccbNgLNONqJ3ZLn3r_hRvE1Kiu9KcrTcHM7m01iNIcCrotB6hhnmvQ=w1052-h592-rw)
-![Level Screen](https://play-lh.googleusercontent.com/WSJ6KNW1mLsauQ0Hg-snSvKUV5QNR-1Q9DMSrvJmsai0A9SB0B6sIZ1-T5f0quQ0oI0=w1052-h592-rw)
-![Activities Screen](https://play-lh.googleusercontent.com/YOqrqRbAix0g7FUc3LLKRfpM4IgBQTwnvgkijWu8Ry152SZHrh7l--OKWhCu8MLCUg=w1052-h592-rw)
-![Image Grouping Screen](https://play-lh.googleusercontent.com/GT1uz4eWgLve_452iAt-dpvHwYcofTWLdBjDZf9KDNQ0fmK2OmxRC8zQeh5ERm0vKrg=w1052-h592-rw) -->
-
-<!-- grid for screenshots 3x2 -->
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px;">
         <img src="https://play-lh.googleusercontent.com/VjhF723-vNtEccbNgLNONqJ3ZLn3r_hRvE1Kiu9KcrTcHM7m01iNIcCrotB6hhnmvQ=w1052-h592-rw" alt="Title Screen" style="max-width: 100%;">

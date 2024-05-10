@@ -1,12 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
-    aria-hidden="true" stroke="#3891AA" fill="url(#icon-gradient-bo9906ds)"
-    style="--size:1.6em" class="astro-patnjmll" data-astro-cid-patnjmll=""
-    data-astro-source-loc="30:2">
-    <g data-astro-cid-patnjmll=""
-        data-astro-source-loc="31:3">
-        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
-            d="m80 96 40 32-40 32m56 0h40"></path>
-        <rect width="192" height="160" x="32" y="48" fill="none" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="16.97" rx="8.5"></rect>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="url(#icon-gradient-bo9906ds)" stroke="#3891AA" aria-hidden="true" class="astro-patnjmll" data-astro-source-loc="30:2" style="--size:1.6em" viewBox="0 0 256 256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-source-loc="31:3">
+    <path stroke-width="16" d="m80 96 40 32-40 32m56 0h40"/>
+    <rect width="192" height="160" x="32" y="48" stroke-width="16.97" rx="8.5"/>
+  </g>
 </svg>
