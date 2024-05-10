@@ -42,8 +42,20 @@ const { Content } = await entry.render();
               <div class="tags">
                 {entry.data.tags.map((t) => <Pill>{t}</Pill>)}
               </div>
-              <p class="description">{entry.data.description}</p>
+              <p class="description">
+                {entry.data.description}
+              </p>
             </div>
+            {
+              entry.data.repo && (
+                <span class="repository">
+                  Repository:
+                  <a href={entry.data.repo} target="_blank">
+                    {entry.data.repo}
+                  </a>
+                </span>
+              )
+            }
           </Hero>
         </div>
       </header>
@@ -81,6 +93,10 @@ const { Content } = await entry.render();
     gap: 1.5rem;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .repository {
+    font-size: var(--text-md);
   }
 
   .tags {
