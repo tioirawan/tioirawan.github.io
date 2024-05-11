@@ -66,21 +66,23 @@ const imageOg = new URL(image || "", Astro.site).toString();
 </script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2H7464X60L"
-></script>
-<script>
-  declare global {
-    interface Window {
-      dataLayer: any[];
-      gtag: (...args: any[]) => void;
-    }
-  }
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-2H7464X60L"></script>
+<script type="text/partytown">
+  // declare global {
+  //     interface Window {
+  //       dataLayer: any[];
+  //       gtag: (...args: any[]) => void;
+  //     }
+  //   }
 
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function (...args: any[]): void {
-    window.dataLayer.push(arguments);
-  };
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  window.gtag("js", new Date());
-  window.gtag("config", "G-2H7464X60L");
+  gtag("config", "G-2H7464X60L");
 </script>
