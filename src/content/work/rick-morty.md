@@ -1,6 +1,6 @@
 ---
 title: Rick Morty
-publishDate: 2024-15-01 12:00:00
+publishDate: 2023-08-15 12:00:00
 img: /assets/works/rick-morty/cover.png
 img_alt: Rick Morty Screenshoot
 description: |
