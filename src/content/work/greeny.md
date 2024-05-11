@@ -4,20 +4,22 @@ publishDate: 2023-11-14 15:47:00
 img: /assets/works/greeny/cover.png
 img_alt: Greeny app screenshot
 description: |
-   Plant grower's companion app for growth tracking, watering reminders, plant disease diagnosis, soil type identification, and AR garden planning with gamification.
+   Plant grower's companion app for growth tracking, watering reminders, plant disease diagnosis, soil type identification, and AR garden planning with gamification. 
 tags:
   - Mobile
-  - Plant
   - Flutter
   - Tensorflow
-  - TfLite
   - Firebase
   - Competition Winning
 ---
 
 ## Greeny
 
+
+Done collaborating with [Maulana Arif Wijaya](https://www.linkedin.com/in/maulana-arif), [Sely Ruli Amanda](https://www.linkedin.com/in/sely-ruli-amanda-b2a25a1b3), and [Lailatul Badriyah](https://www.linkedin.com/in/lailatulbadriyah).
+
 <iframe width="100%" height="300" src="https://www.youtube.com/embed/2q5aPL7HX48?si=mnS3CZu-pPL24Mmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 ### Background
