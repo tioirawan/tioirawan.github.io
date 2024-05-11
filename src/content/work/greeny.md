@@ -11,6 +11,7 @@ tags:
   - Tensorflow
   - Firebase
   - Competition Winning
+featured: true
 ---
 
 ## Greeny

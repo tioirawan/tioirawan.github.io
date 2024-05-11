@@ -9,6 +9,7 @@ tags:
   - Mobile
   - Flutter
 repo: https://github.com/tioirawan/myocr
+featured: true
 ---
 
 #### Overview

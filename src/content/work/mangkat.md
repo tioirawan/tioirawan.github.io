@@ -12,6 +12,7 @@ tags:
   - Competition Winning
   - Firebase
 repo: https://github.com/tioirawan/mangkat
+featured: true
 ---
 
 ## Mangkat

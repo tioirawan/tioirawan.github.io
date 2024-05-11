@@ -11,6 +11,7 @@ tags:
   - Flutter
   - Laravel
 repo: https://github.com/Innodev-K8/rejoin
+featured: true
 ---
 
 #### Overview
