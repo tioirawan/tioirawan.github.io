@@ -11,7 +11,7 @@ tags:
 repo: https://github.com/tioirawan/rick-morty-app
 ---
 
-#### Overview
+# Overview
 
 This is a simple app that uses the Rick and Morty API to display a list of characters and their details. Users can search for characters by name, add characters to their favorites, and view their favorites.
 

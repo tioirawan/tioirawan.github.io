@@ -12,6 +12,6 @@ repo: https://github.com/tioirawan/myocr
 featured: true
 ---
 
-#### Overview
+# Overview
 
 My KTP is a mobile application that helps users scan and extract information from Indonesian ID cards (KTP) using OCR technology. The app uses the device's camera to capture an image of the ID card and then extracts the relevant information, such as name, address, and ID number, using optical character recognition (OCR) server written in Python. The app also provides a history of scanned ID cards, allowing users to keep track of their scanned documents.

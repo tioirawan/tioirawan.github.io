@@ -13,11 +13,11 @@ tags:
 repo: https://github.com/Innodev-K8/diiket
 ---
 
-#### Overview
+# Overview
 
 Diiket or Digital Market is an e-commerce platform for traditional market. Diiket was born due to concerns about traditional market traders facing other competitors in this digital era.
 
-#### Repositories
+# Repositories
 
 - [Core](https://github.com/Innodev-K8/diiket-core) - Core package, used by the user, driver, and seller mobile app
 - [Mobile App](https://github.com/Innodev-K8/diiket) - Mobile app for customer

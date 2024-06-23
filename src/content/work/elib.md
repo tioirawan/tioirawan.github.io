@@ -12,7 +12,7 @@ tags:
   - Laravel
 ---
 
-#### Overview
+# Overview
 
 ELib is an electronic library app made especially for schools and campuses. It's like having a library right in your pocket! With ELib, school staff can easily add books and other reading materials, while students can borrow and read them on their phones.
 
@@ -22,7 +22,7 @@ But that's not all! ELib also uses something called Pusher to make things happen
 
 So, whether you're looking for textbooks, novels, or research papers, ELib has got you covered, making reading and learning easier and more fun for everyone!
 
-#### Screenshots
+# Screenshots
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px;">

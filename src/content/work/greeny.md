@@ -19,7 +19,7 @@ featured: true
 
 Done collaborating with [Maulana Arif Wijaya](https://www.linkedin.com/in/maulana-arif), [Sely Ruli Amanda](https://www.linkedin.com/in/sely-ruli-amanda-b2a25a1b3), and [Lailatul Badriyah](https://www.linkedin.com/in/lailatulbadriyah).
 
-<iframe width="100%" height="300" src="https://www.youtube.com/embed/2q5aPL7HX48?si=mnS3CZu-pPL24Mmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/2q5aPL7HX48?si=mnS3CZu-pPL24Mmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
@@ -37,19 +37,19 @@ This project is developed specifically for a competition where teams are challen
 
 ### My Key Roles
 
-##### **1. Disease Detection**
+## **1. Disease Detection**
 Implemented robust disease detection algorithms using machine learning to accurately identify plant diseases based on image inputs. Achieved high accuracy rates and optimized models for real-time processing.
 
-##### **2. Soil Classification**
+## **2. Soil Classification**
 Developed a soil classification system utilizing machine learning techniques to classify soil types based on various parameters.
 
-##### **3. Virtual Plotting with AR**
+## **3. Virtual Plotting with AR**
 Did the development of a virtual plotting feature using augmented reality (AR) technology. Enabled users to visualize and plan their agricultural plots virtually, enhancing efficiency and reducing resource wastage.
 
-##### **4. Marketplace Payment Integration**
+## **4. Marketplace Payment Integration**
 Integrated secure payment gateways into the marketplace platform, ensuring seamless transactions for buyers and sellers. Implemented robust security measures to protect user data and financial transactions.
 
-##### **5. User Interactive Animation**
+## **5. User Interactive Animation**
 Designed and implemented user interactive animations to enhance user experience and engagement. Utilized modern animation techniques to create intuitive interfaces and improve usability.
 
 ### Conclusion

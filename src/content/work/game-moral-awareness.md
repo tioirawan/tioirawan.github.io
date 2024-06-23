@@ -13,7 +13,7 @@ tags:
 
 Game Moral Awareness (GMA) is a project that aims to provide a platform for individuals with mental disabilities to engage in cognitive activities that promote moral awareness and social interaction. The project is designed to be accessible to a wide range of users, including those with cognitive impairments, and offers a variety of activities that cater to different cognitive abilities. By focusing on the development of cognitive skills and moral awareness, GMA aims to enhance the quality of life for individuals with mental disabilities and promote social inclusion.
 
-#### Screenshots
+# Screenshots
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px;">
@@ -37,6 +37,6 @@ Game Moral Awareness (GMA) is a project that aims to provide a platform for indi
 <br/>
 <br/>
 
-#### Check it Out
+# Check it Out
 
 Check out the [GMA project on Play Store](https://play.google.com/store/apps/details?id=com.beemata.game_moral_awareness).

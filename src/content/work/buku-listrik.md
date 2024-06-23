@@ -11,7 +11,7 @@ tags:
 repo: https://github.com/tioirawan/bukulistrik
 ---
 
-#### Overview
+# Overview
 
 Buku Listrik is a mobile application that helps users manage their electricity usage by tracking daily token usage and purchases. The app calculates the average daily usage, remaining balance, and forecasted days remaining based on the user's input. The app also provides a history of token purchases and usage, allowing users to track their electricity consumption over time.
 
