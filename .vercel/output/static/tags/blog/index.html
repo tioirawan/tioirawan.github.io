@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en-GB" class=""> <head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"><meta content="IE=edge" http-equiv="X-UA-Compatible"><title>Tag: blog • astro-theme-resume</title><!-- <link href="favicon/favicon.ico" rel="icon" sizes="any" />
+<link href="favicon/icon.svg" rel="icon" type="image/svg+xml" />
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="/manifest.webmanifest" rel="manifest" /> --><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="manifest" href="/favicon/site.webmanifest"><!-- <link rel='preload' href='/fonts/Satoshi-Variable.ttf' as='font' type='font/ttf' crossorigin />
+<link
+	rel='preload'
+	href='/fonts/Satoshi-VariableItalic.ttf'
+	as='font'
+	type='font/ttf'
+	crossorigin
+/>
+<link rel='preload' href='/fonts/ClashDisplay-Variable.ttf' as='font' type='font/ttf' crossorigin /> --><link rel="canonical" href="https://tioirawan.github.io/tags/blog/"><meta content="Tag: blog • astro-theme-resume" name="title"><meta content="View all posts with the tag - blog" name="description"><meta content="SRLEOM" name="author"><meta content="" name="theme-color"><meta content="website" property="og:type"><meta content="Tag: blog" property="og:title"><meta content="View all posts with the tag - blog" property="og:description"><meta content="https://tioirawan.github.io/tags/blog/" property="og:url"><meta content="astro-theme-resume" property="og:site_name"><meta content="en_GB" property="og:locale"><meta content="https://tioirawan.github.io/social-card.png" property="og:image"><meta content="1200" property="og:image:width"><meta content="630" property="og:image:height"><meta content="summary_large_image" property="twitter:card"><meta content="https://tioirawan.github.io/tags/blog/" property="twitter:url"><meta content="Tag: blog" property="twitter:title"><meta content="View all posts with the tag - blog" property="twitter:description"><meta content="https://tioirawan.github.io/social-card.png" property="twitter:image"><link href="/sitemap-index.xml" rel="sitemap"><link href="/rss.xml" rel="alternate" title="astro-theme-resume" type="application/rss+xml"><meta content="Astro v4.11.0" name="generator"><link rel="stylesheet" href="/_astro/_slug_.BqPfQPXA.css"><script type="module" src="/_astro/hoisted.BkSZLX8a.js"></script>
+<script type="module" src="/_astro/page.DFwqf4PB.js"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script></head> <body class="flex justify-center bg-background"> <script>
+	const lightModePref = window.matchMedia('(prefers-color-scheme: light)')
+
+	// Get user preference from local storage or from browser preference
+	function getUserPref() {
+		const storedTheme = localStorage.getItem('theme') ?? undefined
+		return storedTheme || (lightModePref.matches ? 'light' : 'dark')
+	}
+
+	function setTheme(newTheme) {
+		if (newTheme !== 'light' && newTheme !== 'dark') {
+			return console.log(`Invalid theme value '${newTheme}' received. Expected 'light' or 'dark'.`)
+		}
+
+		localStorage.setItem('theme', newTheme)
+
+		const root = document.documentElement
+
+		// if current dark theme and new theme is dark, return
+		if (newTheme === 'dark' && root.classList.contains('dark')) {
+			return
+		} else if (newTheme === 'light' && !root.classList.contains('dark')) {
+			return
+		}
+
+		root.classList.toggle('dark')
+	}
+
+	// Initial Setup
+	setTheme(getUserPref())
+
+	// View Transitions hook to restore theme
+	document.addEventListener('astro:after-swap', () => setTheme(getUserPref()))
+
+	// Listen for theme-change custom event
+	document.addEventListener('theme-change', (e) => {
+		setTheme(e.detail.theme)
+	})
+
+	// Listen for prefers-color-scheme change
+	lightModePref.addEventListener('change', (e) => setTheme(e.matches ? 'light' : 'dark'))
+</script> <main class="flex min-h-screen w-screen max-w-[60rem] flex-col items-center px-6 pb-10 pt-7 font-satoshi text-[0.92rem] leading-relaxed sm:px-10 lg:px-10"> <header class="mb-12 flex w-full flex-wrap pb-3 text-sm sm:flex-nowrap sm:justify-start"> <nav class="relative mx-auto flex w-full items-center justify-between sm:flex sm:items-center" aria-label="global"> <a class="flex-none text-xl font-semibold" href="/" aria-label="Brand">tioirawan</a> <div class="flex flex-row items-center justify-center gap-x-5 sm:gap-x-7"> <!-- <a
+				href='/work'
+				
+				aria-label='Nav Menu Item'
+				class:list={[
+					"flex-none text-[1.05rem] font-medium hover:text-foreground/75",
+					{
+						active:
+							Astro.url.pathname === href ||
+							(href !== "/" && Astro.url.pathname.startsWith(href)),
+					},
+				]}
+				>Work
+			</a>
+			<a
+				href='/blog'
+				class='flex-none text-[1.05rem] font-medium hover:text-foreground/75'
+				aria-label='Nav Menu Item'
+				>Blog
+			</a>
+			<a
+				href='/tools'
+				class='flex-none text-[1.05rem] font-medium hover:text-foreground/75'
+				aria-label='Nav Menu Item'
+				>Tools
+			</a> --> <a href="/work" class="flex-none text-[1.05rem] font-medium hover:text-foreground/75" aria-label="Nav Menu Item"> Work </a><a href="/blog" class="flex-none text-[1.05rem] font-medium hover:text-foreground/75" aria-label="Nav Menu Item"> Blog </a><a href="/tools" class="flex-none text-[1.05rem] font-medium hover:text-foreground/75" aria-label="Nav Menu Item"> Tools </a> <button id="toggleDarkMode" class="relative rounded-md border border-border p-1.5 transition-all hover:bg-border"> <span class="sr-only">Dark Theme</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:hidden dark:-rotate-90 dark:scale-0"><path fill="currentColor" d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15m0 1q-1.671 0-2.836-1.164T8 12q0-1.671 1.164-2.836T12 8q1.671 0 2.836 1.164T16 12q0 1.671-1.164 2.836T12 16m-7-3.5H1.5v-1H5zm17.5 0H19v-1h3.5zM11.5 5V1.5h1V5zm0 17.5V19h1v3.5zM6.746 7.404l-2.16-2.098l.695-.744l2.111 2.134zM18.72 19.438l-2.117-2.14l.652-.702l2.16 2.098zM16.596 6.746l2.098-2.16l.744.695l-2.134 2.111zM4.562 18.72l2.14-2.117l.663.652l-2.078 2.179zM12 12"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="hidden h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:block dark:rotate-0 dark:scale-100"><path fill="currentColor" d="M12.058 20q-3.334 0-5.667-2.333Q4.058 15.333 4.058 12q0-3.038 1.98-5.27Q8.02 4.5 10.942 4.097q.081 0 .159.006t.153.017q-.506.706-.801 1.57q-.295.865-.295 1.811q0 2.667 1.866 4.533q1.867 1.867 4.534 1.867q.952 0 1.813-.295q.862-.295 1.548-.801q.012.075.018.153q.005.078.005.158q-.384 2.923-2.615 4.904T12.057 20"></path></svg> </button> </div> </nav> </header>   <div class="w-full"> <a class="inline-flex items-center gap-x-1 rounded-lg bg-primary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input" href="/blog" data-astro-prefetch> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"> <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path> </svg> <p>Back</p>  </a> <h1 class="mb-6 mt-5 flex items-end gap-x-2 text-2xl font-bold">
+Tags:
+<span class="text-xl">#blog</span> </h1> <section aria-label="Blog post list"> <ul class="flex flex-col gap-y-3 text-start"> <li class="flex flex-col gap-2 sm:flex-row sm:gap-x-4 [&_q]:basis-full"> <time datetime="2024-06-22T17:00:00.000Z" class="min-w-[120px]"> 23 Jun 2024 </time> <h2><a data-astro-prefetch href="/blog/hello-world/" class="transition-all hover:text-muted-foreground"> Welcome to My Blog: A Journey into Tech and Life </a> <p class="line-clamp-3 block text-sm italic text-muted-foreground"> Blogging is something I always afraid to start. But here I am, starting my first blog post. </p></h2> </li> </ul>  </section> </div>  <footer class="mx-auto mt-24 w-full"> <div class="border-t border-border pt-5"> <div class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0"> <div class="flex gap-x-4 text-sm"> <!-- <a
+          class='inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+          href='/terms'>Terms</a
+        >
+
+        <a
+          class='inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+          href='/privacy'>Privacy</a
+        > --> <p class="">© 2024 Tio Irawan. All rights reserved.</p> </div> <div class="flex items-center justify-between"> <!-- Social Brands --> <div class="flex items-center gap-x-4"> <!-- Linkedin --> <a class="inline-block text-muted-foreground transition-all hover:text-muted-foreground/75" href="https://www.linkedin.com/in/tioirawan/"> <svg class="h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248c-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586c.173-.431.568-.878 1.232-.878c.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252c-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg> </a> </div> <!-- End Social Brands --> </div> </div> </div> </footer> </main> </body></html>

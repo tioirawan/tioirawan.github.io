@@ -9,7 +9,7 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import { expressiveCodeOptions } from './src/site.config'
 import { remarkReadingTime } from './src/utils/remarkReadingTime.ts'
 
-import vercel from '@astrojs/vercel/serverless'
+// import vercel from '@astrojs/vercel/serverless'
 
 // https://astro.build/config
 export default defineConfig({
@@ -41,8 +41,8 @@ export default defineConfig({
 		}
 	},
 	prefetch: true,
-	output: 'server',
-	adapter: vercel({
-		webAnalytics: { enabled: true }
-	})
+	// output: 'server',
+	// adapter: vercel({
+	// 	webAnalytics: { enabled: true }
+	// })
 })

@@ -1,0 +1,1 @@
+function t(){return localStorage.getItem("theme")}const n=document.getElementById("toggleDarkMode");n?.addEventListener("click",()=>{const e=new CustomEvent("theme-change",{detail:{theme:t()==="light"?"dark":"light"}});document.dispatchEvent(e)});
