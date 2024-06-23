@@ -75,7 +75,7 @@ const paginationProps = {
 						{page.data.map((project) => (
 							<li>
 								<ProjectCard
-									href={`work/${project.slug}`}
+									href={`${project.slug}`}
 									heading={project.data.title}
 									subheading={project.data.description}
 									image={project.data.img}
